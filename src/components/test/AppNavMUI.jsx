@@ -165,9 +165,13 @@ const SingleNavTab = ({ navName }) => {
       onMouseOver={handleHover}
       onMouseLeave={handleLeave}
       tabIndex={0} // Make it focusable
-      onKeyPress={(e) => {
+      onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") {
-          handleHover();
+          if (open) {
+            handleLeave();
+          } else {
+            handleHover();
+          }
         }
       }}
       aria-label={`Navigation item: ${navName}`} // Adding aria-label
