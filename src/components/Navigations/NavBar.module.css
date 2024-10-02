@@ -1,0 +1,46 @@
+nav {
+  background: #09436d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.navigations {
+  color: white;
+  display: flex;
+  column-gap: 0px;
+  background: #09436d;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.navigations a:hover {
+  color: #021e33;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+.navigations a {
+  text-decoration: none;
+  padding: 10px 10px;
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 2;
+  border-right: 1px solid #295b80;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+.isActive {
+  color: #021e33;
+  background-color: white;
+}
+.isActive a {
+  color: #021e33;
+}
+
+#coop {
+  background-color: #bf470e;
+}
+#coop:hover {
+  background-color: #953204;
+  transition: all 0.3s ease-in-out;
+}

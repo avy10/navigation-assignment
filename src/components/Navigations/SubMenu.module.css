@@ -1,0 +1,5 @@
+.singleNavMenu a:hover {
+  text-decoration: 1px underline aqua;
+  background-color: black;
+  color: white;
+}
